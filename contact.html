@@ -4,40 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="contact.js" defer></script>
 </head>
+    <script type="text/javascript"> var infolinks_pid = 3434320; var infolinks_wsid = 0; </script> <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
 <body>
-
-    <!-- Navigation Bar -->
     <header>
+        <h1>Contact Us</h1>
         <nav>
-            <div class="logo">MyWebsite</div>
-            <ul class="nav-links">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="videos.html">Videos & Ads</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Contact Form Section -->
-    <section class="contact-container">
-        <h1>Contact Us</h1>
-        <p>If you have any questions, feel free to reach out!</p>
-
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <main>
+        <form id="contactForm">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" required>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" required></textarea>
 
             <button type="submit">Send Message</button>
         </form>
-    </section>
 
+        <div id="contact-info">
+            <h3>Contact Details</h3>
+            <p>Email: <a href="mailto:Faizanmaliks888@gmail.com">Faizanmaliks888@gmail.com</a></p>
+            <p>Phone: <a href="tel:+923480169422">03480169422</a></p>
+            <p>WhatsApp: <a href="https://wa.me/923480169422" target="_blank">Chat on WhatsApp</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 My Website | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+    </footer>
 </body>
 </html>
